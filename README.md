@@ -12,3 +12,5 @@ Booststrap-Ejercicio10
 Se crea la rama navbar y se deja por default en bootstrap
 # Se agrega el responsibe breackpoints
 Se pone algo de historia y principales noticias y cronologia
+# Se agrega acordion en la web
+Se agraga el componente de acordion
