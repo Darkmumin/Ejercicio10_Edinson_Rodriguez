@@ -14,3 +14,4 @@ Se crea la rama navbar y se deja por default en bootstrap
 Se pone algo de historia y principales noticias y cronologia
 # Se agrega acordion en la web
 Se agraga el componente de acordion
+*/ se ordena el acordeon y le da mejor orden a la web, se agrega Digital Ocean como web

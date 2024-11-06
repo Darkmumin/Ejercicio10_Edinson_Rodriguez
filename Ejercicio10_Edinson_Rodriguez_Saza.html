@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="https://logowiki.net/uploads/logo/e/elastic-cloud.svg" alt="Bootstrap" width="30" height="24">
@@ -44,6 +44,7 @@
                             <li><a class="dropdown-item" href="#">Huawei Cloud</a></li>
                             <li><a class="dropdown-item" href="#">Alibaba Cloud</a></li>
                             <li><a class="dropdown-item" href="#">Oracle Cloud</a></li>
+                            <li><a class="dropdown-item" href="#">Digital Ocean</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -71,6 +72,7 @@
                 <div class="col-12">Alibaba Cloud</div>
                 <div class="col-12">Oracle Cloud</div>
                 <div class="col-12">Huawei Cloud</div>
+                <div class="col-12">Digital Ocean</div>
             </div>
             <div class="col-7 bg-danger-subtle text-center border border-2 border-black">
                 <strong>URL</strong>
@@ -95,107 +97,126 @@
                 <div class="col-12">
                     <a href="https://cloud.huawei.com/" target="_blank">https://cloud.huawei.com/</a>
                 </div>
+                <div class="col-12">
+                    <a href="https://www.digitalocean.com/" target="_blank">https://www.digitalocean.com/</a>
+                </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-12 col-lg-3 col-md-6 mb-3">
-                <h2>Historia</h2>
-                <p>Las nubes públicas nacieron como una evolución de la tecnología de virtualización y la
-                    infraestructura compartida, permitiendo que múltiples usuarios accedieran a recursos informáticos de
-                    forma remota. Empresas como Amazon lanzaron servicios pioneros en la década de 2000, siendo Amazon
-                    Web
-                    Services (AWS) uno de los primeros proveedores en 2006. Rápidamente, otros gigantes como Google y
-                    Microsoft entraron en el mercado con sus plataformas de Google Cloud y Azure, ofreciendo
-                    almacenamiento,
-                    procesamiento, y bases de datos bajo demanda. La adopción masiva fue impulsada por los beneficios de
-                    costos, escalabilidad y acceso global. Hoy, las nubes públicas son la base de muchas aplicaciones
-                    modernas, desde redes sociales hasta servicios empresariales avanzados.</p>
-            </div>
-            <div class="col-12 col-lg-3 col-md-6 mb-3">
-                <h2>Antecedentes</h2>
-                <p>Los antecedentes de las nubes públicas se remontan a la computación en red de los años 60,
-                    cuando pioneros como John McCarthy ya hablaban de la computación como un servicio público. A finales
-                    de
-                    los 90, empresas como Salesforce introdujeron el concepto de software en la nube, ofreciendo
-                    aplicaciones accesibles desde Internet. La aparición de la virtualización, sobre todo con
-                    tecnologías de
-                    VMware, permitió dividir servidores físicos en varios entornos virtuales, haciendo el uso de
-                    recursos
-                    más flexible y rentable. En 2006, Amazon revolucionó la tecnología con AWS y su modelo de pago por
-                    uso,
-                    que democratizó el acceso a infraestructura de alta potencia sin grandes inversiones iniciales.
-                    Estos
-                    avances impulsaron a empresas como Google y Microsoft a crear sus propias plataformas de nube
-                    pública,
-                    cambiando para siempre el panorama tecnológico.</p>
-            </div>
-            <div class="col-12 col-lg-3 col-md-6 mb-3">
-                <h2>Noticias</h2>
-                <p>En las noticias recientes sobre nubes públicas, destacan avances en inteligencia artificial,
-                    una coalición por la competencia en el mercado y expansión en sectores clave. En el evento Google
-                    Cloud
-                    Next 2024, Google Cloud presentó mejoras en IA, como su modelo Gemini 1.5 Pro, diseñado para que las
-                    empresas integren capacidades multimodales y procesamientos avanzados de contexto extenso,
-                    beneficiando
-                    industrias como la salud y los videojuegos.
-
-                    Además, se formó la Open Cloud Coalition (OCC), un grupo que impulsa la transparencia y competencia
-                    en
-                    servicios de nube. Esto responde a la creciente vigilancia regulatoria en la UE y el Reino Unido,
-                    enfocada en evitar que empresas queden atrapadas en contratos restrictivos. La OCC, que incluye a
-                    Google
-                    y Centerprise International, promueve prácticas justas y la adopción de estándares abiertos para
-                    facilitar la interoperabilidad y reducir barreras de cambio​.</p>
-            </div>
-            <div class="col-12 col-lg-3 col-md-6 mb-3">
-                <h2>Cronologia</h2>
-                <p>La cronología de las nubes públicas comienza en los años 60, cuando John McCarthy vislumbró la
-                    computación como un servicio. En 1999, Salesforce lanzó una plataforma de CRM en la nube, marcando
-                    el inicio de las aplicaciones web. En 2006, Amazon Web Services (AWS) revolucionó el mercado con su
-                    modelo de pago por uso, haciendo accesible la infraestructura de alta potencia. En 2010, Microsoft
-                    Azure y Google Cloud ampliaron la competencia, facilitando el acceso a infraestructura escalable.
-                    Hoy en día, la nube pública continúa expandiéndose y evolucionando, integrando inteligencia
-                    artificial y estándares abiertos para mejorar la interoperabilidad y reducir barreras de cambio</p>
-            </div>
-        </div>
-        <div class="accordion" id="accordionExample">
+        <div class="h3 mb-3 m-3">Conceptos de una nube cloud</div>
+        <div class="accordion" id="accordionCloud">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
+                <button class="accordion-button collapsed bg-success" style="--bs-bg-opacity: .3;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Historia
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse bg-secondary" style="--bs-bg-opacity: .2;" data-bs-parent="#accordionCloud">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>Las nubes públicas nacieron como una evolución de la tecnología de virtualización</strong> y la
+                  infraestructura compartida, permitiendo que múltiples usuarios accedieran a recursos informáticos de
+                  forma remota. Empresas como Amazon lanzaron servicios pioneros en la década de 2000, siendo Amazon
+                  Web Services (AWS) uno de los primeros proveedores en 2006. Rápidamente, otros gigantes como Google y
+                  Microsoft entraron en el mercado con sus plataformas de Google Cloud y Azure, ofreciendo
+                  almacenamiento, procesamiento, y bases de datos bajo demanda.<br>La adopción masiva fue impulsada por los beneficios de
+                  costos, escalabilidad y acceso global. Hoy, las nubes públicas son la base de muchas aplicaciones
+                  modernas, desde redes sociales hasta servicios empresariales avanzados..
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
+                <button class="accordion-button collapsed bg-success" style="--bs-bg-opacity: .3;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Antecedentes
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseTwo" class="accordion-collapse collapse bg-secondary" style="--bs-bg-opacity: .2;" data-bs-parent="#accordionCloud">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>Los antecedentes de las nubes públicas.</strong> se remontan a la computación en red de los años 60,
+                  cuando pioneros como John McCarthy ya hablaban de la computación como un servicio público.<br>A finales
+                  de los 90, empresas como Salesforce introdujeron el concepto de software en la nube, ofreciendo
+                  aplicaciones accesibles desde Internet. La aparición de la virtualización, sobre todo con
+                  tecnologías de VMware, permitió dividir servidores físicos en varios entornos virtuales, haciendo el uso de
+                  recursosmás flexible y rentable.<br>En 2006, Amazon revolucionó la tecnología con AWS y su modelo de pago por
+                  uso, que democratizó el acceso a infraestructura de alta potencia sin grandes inversiones iniciales.
+                  Estos avances impulsaron a empresas como Google y Microsoft a crear sus propias plataformas de nube
+                  pública, cambiando para siempre el panorama tecnológico.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                <button class="accordion-button collapsed bg-success" style="--bs-bg-opacity: .3;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Noticias
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseThree" class="accordion-collapse collapse bg-secondary" style="--bs-bg-opacity: .2;" data-bs-parent="#accordionCloud">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>En las noticias recientes sobre nubes públicas,</strong> destacan avances en inteligencia artificial,
+                  una coalición por la competencia en el mercado y expansión en sectores clave. En el evento Google
+                  Cloud Next 2024, Google Cloud presentó mejoras en IA, como su modelo Gemini 1.5 Pro, diseñado para que las
+                  empresas integren capacidades multimodales y procesamientos avanzados de contexto extenso,
+                  beneficiando industrias como la salud y los videojuegos. Además, se formó la Open Cloud Coalition (OCC), 
+                  un grupo que impulsa la transparencia y competencia en servicios de nube.<br>Esto responde a la creciente 
+                  vigilancia regulatoria en la UE y el Reino Unido, enfocada en evitar que empresas queden atrapadas en contratos 
+                  restrictivos.<br>La OCC, que incluye a Google y Centerprise International, promueve prácticas justas y la adopción 
+                  de estándares abiertos para facilitar la interoperabilidad y reducir barreras de cambio.
                 </div>
               </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-success" style="--bs-bg-opacity: .3;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Cronologia
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse bg-secondary" style="--bs-bg-opacity: .2;" data-bs-parent="#accordionCloud">
+                    <div class="accordion-body">
+                        <strong>La cronología de las nubes públicas comienza en los años 60,</strong> cuando John McCarthy vislumbró la
+                        computación como un servicio.<br>En 1999, Salesforce lanzó una plataforma de CRM en la nube, marcando
+                        el inicio de las aplicaciones web.<br> En 2006, Amazon Web Services (AWS) revolucionó el mercado con su
+                        modelo de pago por uso, haciendo accesible la infraestructura de alta potencia.<br>En 2010, Microsoft
+                        Azure y Google Cloud ampliaron la competencia, facilitando el acceso a infraestructura escalable.
+                        Hoy en día, la nube pública continúa expandiéndose y evolucionando, integrando inteligencia
+                        artificial y estándares abiertos para mejorar la interoperabilidad y reducir barreras de cambio
+                    </div>
+                </div>
             </div>
           </div>
+        <div class="h2 mb-3 mt-4">Definición</div>
+        <div class="row mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mb-3">
+                <h2>AWS Cloud</h2>
+                <p>AWS (Amazon Web Services) es la plataforma de computación en la nube de Amazon, lanzada en 2006, que ofrece servicios como almacenamiento, bases de datos, análisis de datos, inteligencia artificial, entre otros. Es conocida por su escalabilidad y confiabilidad, permitiendo a empresas de todos tamaños implementar aplicaciones sin necesidad de infraestructura física.</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 mb-3">
+                <h2>Google Cloud</h2>
+                <p>Google Cloud es la plataforma de servicios en la nube de Google, que ofrece soluciones como almacenamiento, análisis de datos, aprendizaje automático, y gestión de aplicaciones. Destaca por su integración con las herramientas de Google y su escalabilidad, que permite a empresas y desarrolladores implementar aplicaciones con flexibilidad y seguridad a nivel global.</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 mb-3">
+                <h2>Azure Cloud</h2>
+                <p>Azure Cloud es la plataforma de servicios en la nube de Microsoft, diseñada para ofrecer infraestructura, servicios de desarrollo, análisis de datos, e inteligencia artificial a empresas de todos los tamaños. Su capacidad de integración con productos de Microsoft y su flexibilidad en entornos híbridos la hacen una opción popular para implementar soluciones en la nube con seguridad y escalabilidad global.</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 mb-3">
+                <h2>IBM Cloud</h2>
+                <p><strong>IBM Cloud</strong> es la plataforma de servicios en la nube de IBM que ofrece infraestructura, inteligencia artificial y soluciones de datos diseñadas para entornos empresariales. Con un enfoque en seguridad, privacidad y compatibilidad con sistemas locales, IBM Cloud permite a las empresas desarrollar y desplegar aplicaciones de manera flexible en entornos híbridos o multicloud. Sus servicios abarcan desde inteligencia artificial y blockchain hasta soluciones específicas para industrias.</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 mb-3">
+                <h2>Alibaba Cloud</h2>
+                <p>Alibaba Cloud es la plataforma en la nube de Alibaba Group que ofrece servicios de almacenamiento, procesamiento de datos, inteligencia artificial y análisis de big data. Es popular en el mercado asiático, especialmente en China, y está diseñado para empresas que buscan escalabilidad, alto rendimiento y soluciones de seguridad. Alibaba Cloud también facilita la creación de entornos multicloud y es ideal para empresas que desean expandirse en el mercado asiático.</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 mb-3">
+                <h2>Oracle Cloud</h2>
+                <p>Oracle Cloud es la plataforma en la nube de Oracle que ofrece servicios de infraestructura, bases de datos, inteligencia artificial y aplicaciones empresariales. Con un enfoque en la seguridad y el rendimiento, Oracle Cloud es ideal para organizaciones que manejan grandes volúmenes de datos y buscan optimizar sus aplicaciones críticas. La plataforma permite la integración con sistemas locales y es conocida por sus potentes capacidades de análisis y procesamiento de datos empresariales.</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 mb-3">
+                <h2>Huawei Cloud</h2>
+                <p>Huawei Cloud es la plataforma en la nube de Huawei que proporciona servicios de cómputo, almacenamiento, inteligencia artificial y big data. Su enfoque está en apoyar la transformación digital de empresas a través de soluciones seguras y escalables, diseñadas especialmente para industrias como telecomunicaciones y manufactura. Con una infraestructura global y una tecnología avanzada, Huawei Cloud ayuda a sus usuarios a optimizar recursos y mejorar la eficiencia operativa mediante el uso de herramientas innovadoras de IA y análisis de datos.</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 mb-3">
+                <h2>Digital Ocean</h2>
+                <p>DigitalOcean es una plataforma de nube diseñada principalmente para desarrolladores y pequeñas empresas, ofreciendo servicios de infraestructura como servidores virtuales (Droplets), bases de datos gestionadas y almacenamiento en la nube. Su enfoque en simplicidad y precios accesibles ha hecho que sea popular entre startups y equipos de desarrollo que buscan soluciones rápidas y fáciles de implementar. DigitalOcean permite a sus usuarios desplegar aplicaciones en minutos y proporciona un ecosistema optimizado para escalar proyectos de forma eficiente.</p>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
