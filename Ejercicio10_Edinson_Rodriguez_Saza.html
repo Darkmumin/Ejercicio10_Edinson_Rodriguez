@@ -1,82 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Edinson Rodriguez Saza">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Nubes Publicas</title>
     <link rel="icon" type="image/x-icon" href="images/favicon-colsubsidio.ico"> 
 </head>
 <body>
-    <h1>Principales Nubes Publicas del mundo</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Sección</th>
-                <th>URL</th>
-            </tr>
-        </thead>
-        <tbody>
-            <div>
-                <tr>
-                    <td>AWS Cloud</td>
-                    <td><a href="https://aws.amazon.com/" target="_blank">https://aws.amazon.com/</a></td>
-                </tr>
+    <div class="container">
+        <div class="h1 text-center">Principales Nubes Publicas del mundo</div>
+        <div class="p"> A continuacion listaremos las principales nubes publicas mas utilizadas a nivel mundial:</div>
+        <div class="row border border-black border-2">
+            <div class="col-5 bg-danger-subtle border border-2 border-black text-center">
+                Sección
+                <div class="col-12">AWS Cloud</div>
+                <div class="col-12">Google Cloud</div>
+                <div class="col-12">Azure Cloud</div>
+                <div class="col-12">IBM Cloud</div>
+                <div class="col-12">Alibaba Cloud</div>
+                <div class="col-12">Oracle Cloud</div>
+                <div class="col-12">Huawei Cloud</div>
             </div>
-            <div>
-                <tr>
-                    <td>Google Cloud</td>
-                    <td><a href="https://cloud.google.com/" target="_blank">https://cloud.google.com/</a></td>
-                </tr>
+            <div class="col-7 bg-danger-subtle text-center border border-2 border-black">
+                URL
+                <div class="col-12">
+                    <a href="https://aws.amazon.com/" target="_blank">https://aws.amazon.com/</a>
+                </div>
+                <div class="col-12">
+                    <a href="https://cloud.google.com/" target="_blank">https://cloud.google.com/</a>
+                </div>
+                <div class="col-12">
+                    <a href="https://azure.microsoft.com/" target="_blank">https://azure.microsoft.com/</a>
+                </div>
+                <div class="col-12">
+                    <a href="https://www.ibm.com/cloud" target="_blank">https://www.ibm.com/cloud</a>
+                </div>
+                <div class="col-12">
+                    <a href="https://www.alibabacloud.com/" target="_blank">https://www.alibabacloud.com/</a>
+                </div>
+                <div class="col-12">
+                    <a href="https://www.oracle.com/cloud/" target="_blank">https://www.oracle.com/cloud/</a>
+                </div>
+                <div class="col-12">
+                    <a href="https://cloud.huawei.com/" target="_blank">https://cloud.huawei.com/</a>
+                </div>
             </div>
-            <div>
-                <tr>
-                    <td>Azure Cloud</td>
-                    <td><a href="https://azure.microsoft.com/" target="_blank">https://azure.microsoft.com/</a></td>
-                </tr>
-            </div>
-            <div>
-                <tr>
-                    <td>IBM Cloud</td>
-                    <td><a href="https://www.ibm.com/cloud" target="_blank">https://www.ibm.com/cloud</a></td>
-                </tr>
-            </div>
-            <div>
-                <tr>
-                    <td>Alibaba Cloud</td>
-                    <td><a href="https://www.alibabacloud.com/" target="_blank">https://www.alibabacloud.com/</a></td>
-                </tr>
-            </div>
-            <div>
-                <tr>
-                    <td>Oracle Cloud</td>
-                    <td><a href="https://www.oracle.com/cloud/" target="_blank">https://www.oracle.com/cloud/"</a></td>
-                </tr>
-            </div>
-            <div>
-                <tr>
-                    <td>Huawei Cloud</td>
-                    <td><a href="https://cloud.huawei.com/" target="_blank">https://cloud.huawei.com/</a></td>
-                </tr>
-            </div>
-        </tbody>
-    </table>
-    <h1>Búsqueda</h1>
-    <form>
-        <div>
-            <label for="Palabra">Palabra clave</label>
-            <input type="text" id="Palabra">
         </div>
-        <div>
-            <label for="Autor">Autor</label>
-            <input type="text" id="Autor">
-        </div>
-        <div>
-            <button type="submit">Buscar</button>
-            <button type="reset">Limpiar</button>
-        </div>
-    </form>
 
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
