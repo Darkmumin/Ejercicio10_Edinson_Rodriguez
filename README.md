@@ -17,3 +17,5 @@ Se agraga el componente de acordion
 */ se ordena el acordeon y le da mejor orden a la web, se agrega Digital Ocean como web
 # Se agrega Cards a la web
 Se deja por defecto las cards de la pagina web en actualización
+# Se modifican las Cards
+Se agrega imagenes y información en las cards
